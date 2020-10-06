@@ -25,8 +25,8 @@
    17. Onclick off canvas menu visible
    18. Wow Initialize
    19. Accordion
-   
-  
+
+
 */
 
 $(function ($) {
@@ -40,7 +40,19 @@ $(function ($) {
 
    }
 
-
+   $('.nav-link').on("click", function(e) {
+      e.preventDefault();
+      let dest = $(this).attr("href");
+      if ($('.tw-head').hasClass('navbar-fixed')) {
+         $("html, body").animate({
+            'scrollTop': $(dest).offset().top - 95
+         }, 1000);
+      } else {
+         $("html, body").animate({
+            'scrollTop': $(dest).offset().top - 195
+         }, 1000);
+      }
+   });
 
    /*Main Slideshow*/
    $(".tw-hero-slider").owlCarousel({
