@@ -188,6 +188,7 @@ h4 {
 ================================================== */
 html {
   overflow-x: hidden !important;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -888,6 +889,16 @@ ul.navbar-nav > li.nav-item > a.nav-link {
   font-weight: 600;
   font-size: 17px;
   margin-right: 12px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-item:nth-last-of-type(1) {
+  margin-right: -1rem;
+}
+
+.navbar-light .navbar-nav .nav-item:nth-last-of-type(1) .nav-link {
+  margin-right: 0;
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
@@ -1557,20 +1568,23 @@ li.dropdown:hover .tw-mega-menu {
   margin-top: 0px;
 }
 
-.slider-1 .slider-content h1 {
+.slider-1 .slider-content h1, .slider-2 .slider-content h1, .slider-3 .slider-content h1 {
   color: #430000;
 }
 
-.slider-1 .slider-content h1 span {
+.slider-1 .slider-content h1 span, .slider-2 .slider-content h1 span, .slider-3 .slider-content h1 span {
   color: #ffab29;
 }
 
-.slider-1 .slider-content p {
+.slider-1 .slider-content p, .slider-2 .slider-content p, .slider-3 .slider-content p {
   color: #757575;
 }
 
 .slider-2 {
-  background-color: #F26744;
+  background: url("../images/slider/slider_bg_2.jpg");
+  background-repeat: contain;
+  background-position: center;
+  background-color: #f7f9f8;
   position: relative;
 }
 
@@ -1579,7 +1593,10 @@ li.dropdown:hover .tw-mega-menu {
 }
 
 .slider-3 {
-  background-color: #2BC2A7;
+  background: url("../images/slider/slider_bg_3.jpg");
+  background-repeat: contain;
+  background-position: center;
+  background-color: #f7f9f8;
   position: relative;
 }
 
@@ -2706,7 +2723,7 @@ input.round-btn {
 
 .tw-footer-info-box {
   position: absolute;
-  top: -122px;
+  top: -51px;
   background: #202020;
   padding: 40px;
   z-index: 2;
@@ -2799,18 +2816,19 @@ input.round-btn {
   margin-bottom: 35px;
 }
 
-.footer-widget h3 {
+.footer-widget h3, .footer-widget .h3 {
   font-size: 24px;
   color: #fff;
   position: relative;
   margin-bottom: 15px;
+  font-weight: 700;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
 
 .footer-widget ul {
-  width: 50%;
+  width: 25%;
   float: left;
   list-style: none;
   margin: 0;
@@ -2916,8 +2934,9 @@ input.round-btn {
   color: #fff;
 }
 
-.contact-info h3 {
+.contact-info h3, .contact-info .h3 {
   font-size: 20px;
+  font-weight: 700;
   color: #fff;
   margin-bottom: 0;
 }
