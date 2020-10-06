@@ -21,6 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2aa5819a-9149-4437-9a40-6c83e43f9817" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duckcoders-new/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/duckcoders-new/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duckcoders-new/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/duckcoders-new/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duckcoders-new/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/duckcoders-new/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +60,7 @@
       <updated>1601635833985</updated>
       <workItem from="1601635835599" duration="14102000" />
       <workItem from="1601977807588" duration="1837000" />
-      <workItem from="1601987767895" duration="620000" />
+      <workItem from="1601987767895" duration="2928000" />
     </task>
     <servers />
   </component>

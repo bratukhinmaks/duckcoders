@@ -567,8 +567,8 @@
     }
     .tw-top-bar-angle .top-contact-info span {
         color: #2e2c2d;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
         text-align: center;
     }
     .tw-top-bar-angle .top-bar-angle-info {
@@ -1204,4 +1204,5 @@
 
 /* Custom, iPhone Retina */
 
-@media (max-width: 320px) and (max-width: 478px) {}
+@media (min-width: 320px) and (max-width: 478px) {
+}
