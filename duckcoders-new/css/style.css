@@ -667,6 +667,17 @@ section {
   background: #ffab29;
 }
 
+.btn-primary[disabled] {
+  cursor: default;
+  background: #D5D9D7;
+  border-color: #757575;
+  color: #757575;
+}
+
+.btn-primary[disabled]:hover {
+  background: #D5D9D7;
+}
+
 .btn-primary:hover {
   background: #430000;
   border-color: #430000;
@@ -1303,14 +1314,31 @@ li.dropdown:hover .tw-mega-menu {
 
 .tw-off-search {
   background: #430000;
-  width: 125px;
-  height: 50px;
+  width: 110px;
+  padding: 0 15px;
+  height: 40px;
   color: #fff;
-  border-radius: 25px;
+  border-radius: 15px;
   position: relative;
   z-index: 3;
   right: 0;
   top: 0;
+}
+
+.lang {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.lang-sep {
+  width: 1px;
+  height: 40px;
+  background: #fff;
+}
+
+.lang.active {
+  color: #ffab29;
 }
 
 .tw-search i {
@@ -2688,6 +2716,47 @@ input.round-btn {
   vertical-align: middle;
 }
 
+.custom-checkbox {
+  padding-left: 45px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #F1F1F1;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  background: #ffab29;
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  top: 4px;
+  left: 4px;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
 /* ==========================
 
     Footer
@@ -2723,7 +2792,7 @@ input.round-btn {
 
 .tw-footer-info-box {
   position: absolute;
-  top: -51px;
+  top: -48px;
   background: #202020;
   padding: 40px;
   z-index: 2;
@@ -5033,6 +5102,10 @@ ul.comments-reply .comment-body {
   margin-bottom: 20px;
 }
 
+.results-trafiic .traffic-info img {
+  min-width: 35px;
+}
+
 .results-trafiic span {
   font-size: 18px;
   font-weight: 700;
@@ -5047,11 +5120,10 @@ ul.comments-reply .comment-body {
 
 .result-bg img {
   position: absolute;
-  left: -105%;
+  left: 0;
   z-index: -1;
 }
 
-/* Traffic Result */
 .traffic-bg-1 {
   background: url("../images/cases/result_bg1.png") no-repeat top center;
 }

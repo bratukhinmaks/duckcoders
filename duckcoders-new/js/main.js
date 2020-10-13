@@ -32,6 +32,14 @@
 $(function ($) {
    "use strict";
 
+   $(".custom-checkbox").on("click", function () {
+      if ($('.custom-checkbox input').prop('checked')) {
+         $('.contact-button').prop('disabled', false);
+      } else {
+         $('.contact-button').prop('disabled', true);
+      }
+   })
+
    if ($(window).width() < 991) {
       $(".navbar-nav li a").on("click", function () {
          $(this).parent("li").find(".dropdown-menu").slideToggle();
