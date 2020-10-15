@@ -1578,7 +1578,7 @@ li.dropdown:hover .tw-mega-menu {
 
 .slider-1 {
   background: url("../images/slider/slider_bg_1.jpg");
-  background-repeat: contain;
+  background-size: contain;
   background-position: center;
   background-color: #f7f9f8;
   position: relative;
@@ -1610,7 +1610,7 @@ li.dropdown:hover .tw-mega-menu {
 
 .slider-2 {
   background: url("../images/slider/slider_bg_2.jpg");
-  background-repeat: contain;
+  background-size: contain;
   background-position: center;
   background-color: #f7f9f8;
   position: relative;
@@ -1622,7 +1622,7 @@ li.dropdown:hover .tw-mega-menu {
 
 .slider-3 {
   background: url("../images/slider/slider_bg_3.jpg");
-  background-repeat: contain;
+  background-size: contain;
   background-position: center;
   background-color: #f7f9f8;
   position: relative;
@@ -5120,8 +5120,50 @@ ul.comments-reply .comment-body {
 
 .result-bg img {
   position: absolute;
-  left: 0;
+  right: 0;
   z-index: -1;
+}
+
+.price-disclamer {
+  font-size: 22px;
+}
+
+.cookie-notice {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #E1E4E3;
+  padding: 7px 20px;
+  display: none;
+  z-index: 99;
+  font-size: 14px;
+}
+
+.cookie-notice .btn {
+  font-size: 12px;
+  padding: 5px 15px;
+  margin-left: 15px;
+}
+
+.cookie-notice .btn:hover {
+  border-color: #ffab29;
+}
+
+.cookie-notice a {
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.cookie-notice a:hover {
+  text-decoration: none;
+}
+
+.cookie-notice.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .traffic-bg-1 {
@@ -5926,7 +5968,7 @@ ul.comments-reply .comment-body {
   display: block;
   font-size: 150px;
   line-height: 150px;
-  color: #333;
+  color: #430000;
   margin-bottom: 20px;
   text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.1);
 }

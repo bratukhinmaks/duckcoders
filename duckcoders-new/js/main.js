@@ -1,36 +1,17 @@
-/*
-
-	Template Name: SeoBin
-	Author: Themewinter
-	Author URI: https://themeforest.net/user/themewinter
-	Description: SeoBin
-	Version: 1.0
-
-   1. Menu Active link
-   2. Drop down Menu
-	3. Main Slideshow
-	4. Testimonial Slider
-   5. Testimonial Slider
-   6. Testimonial Box Carousel
-	7. Counter Up
-	8. Clients Carousel
-   9. Back to top
-   10. video Popup
-   11. Our Mission Carousel
-   12. Map
-   13. Contact Form
-   14. Service List Box Slider
-   15. On Hover Timeline Active Changed
-   16. On Click search bar
-   17. Onclick off canvas menu visible
-   18. Wow Initialize
-   19. Accordion
-
-
-*/
-
 $(function ($) {
    "use strict";
+
+   (function(e){if(typeof define==="function"&&define.amd){define(["jquery"],e)}else{e(jQuery)}})(function(e){function n(e){if(i.raw){return e}return decodeURIComponent(e.replace(t," "))}function r(e){if(e.indexOf('"')===0){e=e.slice(1,-1).replace(/\\"/g,'"').replace(/\\\\/g,"\\")}e=n(e);try{return i.json?JSON.parse(e):e}catch(t){}}var t=/\+/g;var i=e.cookie=function(t,s,o){if(s!==undefined){o=e.extend({},i.defaults,o);if(typeof o.expires==="number"){var u=o.expires,a=o.expires=new Date;a.setDate(a.getDate()+u)}s=i.json?JSON.stringify(s):String(s);return document.cookie=[i.raw?t:encodeURIComponent(t),"=",i.raw?s:encodeURIComponent(s),o.expires?"; expires="+o.expires.toUTCString():"",o.path?"; path="+o.path:"",o.domain?"; domain="+o.domain:"",o.secure?"; secure":""].join("")}var f=document.cookie.split("; ");var l=t?undefined:{};for(var c=0,h=f.length;c<h;c++){var p=f[c].split("=");var d=n(p.shift());var v=p.join("=");if(t&&t===d){l=r(v);break}if(!t){l[d]=r(v)}}return l};i.defaults={};e.removeCookie=function(t,n){if(e.cookie(t)!==undefined){e.cookie(t,"",e.extend({},n,{expires:-1}));return true}return false}});
+
+   if ($.cookie('policy-check') != '1') {
+      setTimeout(function () {
+         $('.cookie-notice').addClass('active');
+         $('.cookie-notice').find('button').click(function () {
+            $.cookie('policy-check', '1', {expires: 7, path: '/'});
+            $('.cookie-notice').removeClass('active');
+         });
+      }, 10);
+   }
 
    $(".custom-checkbox").on("click", function () {
       if ($('.custom-checkbox input').prop('checked')) {
