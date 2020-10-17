@@ -6211,6 +6211,14 @@ ul.comments-reply .comment-body {
   margin-top: 64px;
   margin-bottom: -15px;
 }
+.back-home {
+  color: #430000;
+  font-weight: 600;
+  font-size: 17px;
+  margin-right: 12px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
 
 /*------------------------------
     tw-services-item
@@ -6290,4 +6298,30 @@ ul.comments-reply .comment-body {
 
 .tw-list-style li:last-child {
   margin-bottom: 0;
+}
+.policy-code {
+  font-size: 36px;
+  color: #430000;
+  margin: 40px 0 20px;
+}
+
+.policy-message h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffab29;
+}
+
+.policy-body .card {
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #ffab29;
+  margin-bottom: 20px;
+  color: #430000;
+}
+
+
+.policy-body .card-header h2 .btn {
+  padding: 0;
+  color: #430000;
+  font-size: 15px;
 }
