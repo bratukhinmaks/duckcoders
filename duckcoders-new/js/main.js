@@ -31,7 +31,7 @@ $(function ($) {
    $(document).on("scroll", onScroll);
    function onScroll(){
       let scrollPos = $(document).scrollTop();
-      $('.nav-link').each(function () {
+      $('.nav-link-js').each(function () {
          let currLink = $(this);
          let refElement = $(currLink.attr("href"));
          if (refElement.position().top-200 <= scrollPos && refElement.position().top-200+ refElement.height() > scrollPos) {
@@ -44,7 +44,7 @@ $(function ($) {
       });
    }
 
-   $('.nav-link').on("click", function(e) {
+   $('.nav-link-js').on("click", function(e) {
       $('.nav-item').removeClass('active')
       e.preventDefault();
       let dest = $(this).attr("href");

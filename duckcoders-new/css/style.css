@@ -1691,7 +1691,7 @@ li.dropdown:hover .tw-mega-menu {
   background-repeat: no-repeat;
   background-position: bottom center;
   content: "";
-  background-image: url("../images/features/wave.png");
+  background-image: url("../images/wave.png");
   z-index: -1;
 }
 
@@ -2134,7 +2134,7 @@ input.round-btn {
 
 .casestudy-content {
   background: #fff;
-  padding: 21px 49px 6px;
+  padding: 21px 25px 6px;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -2792,7 +2792,7 @@ input.round-btn {
 
 .tw-footer-info-box {
   position: absolute;
-  top: -48px;
+  top: -60px;
   background: #202020;
   padding: 40px;
   z-index: 2;
@@ -2874,7 +2874,7 @@ input.round-btn {
 }
 
 .footer-info-text {
-  margin: 26px 0 32px;
+  margin: 26px 0 0;
 }
 
 .footer-left-widget {
@@ -2897,7 +2897,7 @@ input.round-btn {
 }
 
 .footer-widget ul {
-  width: 25%;
+  width: 20%;
   float: left;
   list-style: none;
   margin: 0;
@@ -6299,17 +6299,6 @@ ul.comments-reply .comment-body {
 .tw-list-style li:last-child {
   margin-bottom: 0;
 }
-.policy-code {
-  font-size: 36px;
-  color: #430000;
-  margin: 40px 0 20px;
-}
-
-.policy-message h5 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: #ffab29;
-}
 
 .policy-body .card {
   padding: 10px;
@@ -6319,9 +6308,37 @@ ul.comments-reply .comment-body {
   color: #430000;
 }
 
-
 .policy-body .card-header h2 .btn {
   padding: 0;
   color: #430000;
   font-size: 15px;
+}
+
+.case-img {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.case-img img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 0;
+  -webkit-transition: all 5s;
+  -moz-transition: all 5s;
+  -ms-transition: all 5s;
+  -o-transition: all 5s;
+  transition: all 5s;
+}
+
+.case-img:hover img {
+  top: auto;
+  bottom: 0 !important;
+  -webkit-transition: all 5s;
+  -moz-transition: all 5s;
+  -ms-transition: all 5s;
+  -o-transition: all 5s;
+  transition: all 5s;
 }
