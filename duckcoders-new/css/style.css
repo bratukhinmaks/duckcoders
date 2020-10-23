@@ -2134,7 +2134,7 @@ input.round-btn {
 
 .casestudy-content {
   background: #fff;
-  padding: 21px 25px 6px;
+  padding: 21px 20px 6px;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -2355,20 +2355,28 @@ input.round-btn {
     Pricing Table
 
 =============================*/
-.tw-pricing ul.nav {
+.tw-pricing ul.nav, .tw-port ul.nav {
   width: 350px;
   margin: 0 auto;
   border: 1px solid #e9e9e9;
   border-radius: 50px;
 }
 
-.tw-pricing ul.nav .nav-item {
+.tw-port ul.nav {
+  width: 900px;
+}
+
+.tw-pricing ul.nav .nav-item, .tw-port ul.nav .nav-item {
   width: 50%;
   text-align: center;
   border-radius: 50%;
 }
 
-.tw-pricing ul.nav .nav-item a {
+.tw-port ul.nav .nav-item {
+  width: 25%;
+}
+
+.tw-pricing ul.nav .nav-item a, .tw-port ul.nav .nav-item a {
   padding: 12px 0;
   display: block;
   color: #430000;
@@ -2376,7 +2384,7 @@ input.round-btn {
   border-radius: 50px;
 }
 
-.tw-pricing ul.nav .nav-item a.active {
+.tw-pricing ul.nav .nav-item a.active, .tw-port ul.nav .nav-item a.active {
   background: #ffab29;
   border-radius: 50px;
   color: #fff;
@@ -2404,12 +2412,16 @@ input.round-btn {
   margin-top: 12px;
 }
 
-.pricing-tab ul.nav {
+.pricing-tab ul.nav, .portfolio-tabs ul.nav {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.pricing-tab .tab-content .tab-pane .row .col-md-4:nth-of-type(2) .pricing-feaures {
+  margin-top: 30px;
 }
 
 .tw-tab-content {
@@ -6341,4 +6353,8 @@ ul.comments-reply .comment-body {
   -ms-transition: all 5s;
   -o-transition: all 5s;
   transition: all 5s;
+}
+
+.portfolio-row .col-md-4 {
+  margin-bottom: 30px;
 }
