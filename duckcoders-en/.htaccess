@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} ^www.duckcoders\.com$ [NC]
+RewriteRule ^(.*)$ https://duckcoders.com/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://duckcoders.com/$1 [R=301,L] 

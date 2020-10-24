@@ -1304,8 +1304,7 @@ li.dropdown:hover .tw-mega-menu {
   height: 3px;
   left: 10px;
   bottom: 0;
-  border-left: 5px solid #fff;
-  border-color: #f7f9f8;
+  border-left: 5px solid #f7f9f8;
 }
 
 .menu-subscribe form {
@@ -4474,6 +4473,10 @@ ul.comments-reply .comment-body {
 }
 
 /* Contact us Form */
+.alert p {
+  margin: 0;
+}
+
 .alert-success.fade.in {
   opacity: 1;
 }
