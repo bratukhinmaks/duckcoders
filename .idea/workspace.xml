@@ -21,9 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2aa5819a-9149-4437-9a40-6c83e43f9817" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duckcoders-new/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/duckcoders-new/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duckcoders-new/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/duckcoders-new/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duckcoders-new/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/duckcoders-new/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duckcoders-en/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/duckcoders-en/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duckcoders-en/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/duckcoders-en/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duckcoders-en/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/duckcoders-en/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duckcoders-en/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/duckcoders-en/portfolio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duckcoders-en/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/duckcoders-en/privacy-policy.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +62,13 @@
       <updated>1601635833985</updated>
       <workItem from="1601635835599" duration="14102000" />
       <workItem from="1601977807588" duration="1837000" />
-      <workItem from="1601987767895" duration="2928000" />
+      <workItem from="1601987767895" duration="3563000" />
+      <workItem from="1602505656185" duration="498000" />
+      <workItem from="1602962896407" duration="1955000" />
+      <workItem from="1603058300050" duration="92000" />
+      <workItem from="1603059978514" duration="136000" />
+      <workItem from="1603478482552" duration="232000" />
+      <workItem from="1603539813304" duration="5213000" />
     </task>
     <servers />
   </component>
@@ -80,6 +88,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="423" y="261" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603032522239">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="423" y="261" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1603032522239" />
     <state x="974" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601659765919">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
