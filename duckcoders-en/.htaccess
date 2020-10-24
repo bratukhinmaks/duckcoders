@@ -6,3 +6,5 @@ RewriteRule ^(.*)$ https://duckcoders.com/$1 [R=301,L]
 
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://duckcoders.com/$1 [R=301,L] 
+
+ErrorDocument 404 /404.html
