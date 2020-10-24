@@ -1314,8 +1314,8 @@ li.dropdown:hover .tw-mega-menu {
 
 .tw-off-search {
   background: #430000;
-  width: 110px;
-  padding: 0 15px;
+  width: 100px;
+  padding: 0 10px;
   height: 40px;
   color: #fff;
   border-radius: .25rem;
@@ -5158,31 +5158,22 @@ ul.comments-reply .comment-body {
   display: none;
   z-index: 99;
   font-size: 14px;
+  text-align: center;
 }
 
 .cookie-notice .btn {
   font-size: 12px;
   padding: 5px 15px;
   margin-left: 15px;
+  vertical-align: 1px;
 }
 
 .cookie-notice .btn:hover {
   border-color: #ffab29;
 }
 
-.cookie-notice a {
-  text-decoration: underline;
-  margin-left: 5px;
-}
-
-.cookie-notice a:hover {
-  text-decoration: none;
-}
-
 .cookie-notice.active {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 
 .traffic-bg-1 {
