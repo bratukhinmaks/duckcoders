@@ -1,5 +1,5 @@
 <?php
-$recipient = "ducknets@gmail.com";
+$recipient = "info@duckcoders.pl";
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
@@ -10,7 +10,7 @@ $phone=stripslashes($phone);
 $email=stripslashes($email);
 $subject=stripslashes($subject);
 $message=stripslashes($message);
-$message= "Name: $name, Subject: $subject, Phone: $phone \n\n Message: $message";
+$message= "Name: $name, Subject: $subject, Phone: $phone, Email: $email \n\n Message: $message";
 
 if(mail("$recipient", "$subject", "$message", "From: $email" )) {
 	echo '
