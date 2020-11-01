@@ -1,10 +1,12 @@
-# RewriteEngine On
+RewriteEngine On
 
-# RewriteCond %{HTTPS} !=on
-# RewriteCond %{HTTP_HOST} ^www.duckcoders\.pl$ [NC]
-# RewriteRule ^(.*)$ https://duckcoders.pl/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301] 
 
-# RewriteCond %{HTTPS} !=on
-# RewriteRule ^(.*)$ https://duckcoders.pl/$1 [R=301,L] 
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://duckcoders.pl/$1 [R=301,L] 
+
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
 
 ErrorDocument 404 /404.html
